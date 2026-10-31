@@ -69,6 +69,12 @@
     }
     .review .stars { color: var(--terracotta-light); font-size: 18px; letter-spacing: 3px; line-height: 1; }
     .review .text { font-size: 15px; color: var(--text); flex-grow: 1; }
+    .review .reply {
+        font-size: 13px; color: var(--text-muted);
+        background: #faf1eb; border-left: 3px solid var(--terracotta-light);
+        border-radius: 0 6px 6px 0; padding: 8px 12px;
+    }
+    .review .reply strong { color: var(--terracotta); }
     .review .meta { font-size: 13px; color: var(--text-muted); border-top: 1px solid #eee; padding-top: 10px; }
     .review .meta .name { font-weight: bold; color: var(--text); }
 
@@ -97,44 +103,33 @@
     <section class="summary">
         <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
         <div class="score">5,0</div>
-        <div class="count">na podstawie opinii z Google</div>
-        <!-- Po dodaniu prawdziwych opinii podmień: np. "12 opinii z Google" -->
+        <div class="count">3 opinie z Google</div>
         <a class="cta" href="https://g.page/r/CeZk5IUQ7VXnEBM/review" target="_blank" rel="noopener">
             &#11088; Dodaj swoją opinię
         </a>
         <div class="source">Kliknięcie przenosi do Google Opinie</div>
     </section>
 
-    <!-- ============================================================
-         KARTY OPINII — PRZYKŁADY DO PODMIANY NA PRAWDZIWE OPINIE
-         Każda opinia: skopiuj blok <div class="review"> ... </div>,
-         podmień gwiazdki (&#9733; = pełna, &#9734; = pusta),
-         treść, imię autora i datę. Usuń komentarze przy publikacji.
-         ============================================================ -->
     <section class="reviews">
 
         <div class="review">
             <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
-            <div class="text">„Kubek jest przepiękny i robi furorę w domu — dzieci same po niego sięgają. Widać, że każda sztuka jest robiona z sercem. Paczka dotarła błyskawicznie."</div>
-            <div class="meta"><span class="name">Anna K.</span> &middot; via Google &middot; październik 2026</div>
+            <div class="text">„Kubeczek jest śliczny, przyszedł bardzo szybko i w uroczym pudełku - w zasadzie gotowy na prezent 😊"</div>
+            <div class="meta"><span class="name">Magdalena Filipska-Greca</span> &middot; via Google &middot; 3 tyg. temu</div>
         </div>
 
         <div class="review">
             <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
-            <div class="text">„Prezent dla wspinającego się męża — strzał w dziesiątkę. Chwyty trzymają się mocno, kubek myję w zmywarce i nic się nie dzieje. Polecam!"</div>
-            <div class="meta"><span class="name">Marta W.</span> &middot; via Google &middot; wrzesień 2026</div>
+            <div class="text">„Piękne kubeczki dla fanów wspinaczki! Bardzo polecam 😍"</div>
+            <div class="reply"><strong>Odpowiedź pracowni:</strong> Dziękuję 🙏🏻🩷</div>
+            <div class="meta"><span class="name">Zuzanna Boruc</span> &middot; via Google &middot; 7 mies. temu</div>
         </div>
 
         <div class="review">
             <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
-            <div class="text">„Zamówiłem kubek dla córki, która wchodzi na ściance 3 razy w tygodniu. Teraz codziennie rano 'wspina się' po kawę. Świetny pomysł na połączenie pasji."</div>
-            <div class="meta"><span class="name">Piotr M.</span> &middot; via Google &middot; sierpień 2026</div>
-        </div>
-
-        <div class="review">
-            <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
-            <div class="text">„Cudowne, oryginalne rękodzieło. Kontakt z Anią na najwyższym poziomie — dopytała o preferencje kolorystyczne. Kubek prezentuje się jeszcze lepiej niż na zdjęciach."</div>
-            <div class="meta"><span class="name">Kasia i Tomek</span> &middot; via Google &middot; lipiec 2026</div>
+            <div class="text">„Piękne kubeczki! Starannie wykonane i w dodatku pancernie spakowane 😊"</div>
+            <div class="reply"><strong>Odpowiedź pracowni:</strong> Dziękuję 🥰 Bezpieczeństwo podczas podróży przede wszystkim! 😊</div>
+            <div class="meta"><span class="name">Jagoda Marcinkowska</span> &middot; via Google &middot; 7 mies. temu</div>
         </div>
 
     </section>
@@ -150,8 +145,8 @@
 
 </div>
 
-<!-- OPCJONALNIE (SEO): po podmiance przykladów na prawdziwe opinie odkomentuj
-     i uzupełnij liczby, aby Google pokazywał gwiazdki w wynikach wyszukiwania:
+<!-- Dane strukturalne (SEO): gwiazdki w wynikach Google.
+     Jeśli liczba opinii się zmieni, zaktualizuj reviewCount. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -161,10 +156,9 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "12"
+    "reviewCount": "3"
   }
 }
 </script>
--->
 </body>
 </html>
