@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opinie o Grip&Sip — Ania Chmura Art</title>
+<meta name="description" content="Prawdziwe opinie klientów o kubkach wspinaczkowych Grip&Sip z chwytami. Zobacz, co mówią klienci, i dodaj swoją opinię.">
+<style>
+    :root {
+        --terracotta: #B0561F;
+        --terracotta-light: #C86A2E;
+        --terracotta-dark: #8F4518;
+        --bg: #faf6f2;
+        --card-bg: #ffffff;
+        --text: #333333;
+        --text-muted: #777777;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+    }
+    .container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+    /* Header */
+    header { text-align: center; padding: 40px 0 8px; }
+    header img {
+        width: 220px; max-width: 80%; height: auto; display: block; margin: 0 auto 20px;
+    }
+    h1 {
+        font-size: 28px; font-weight: normal; color: var(--text);
+        margin-bottom: 8px;
+    }
+
+    /* Summary card */
+    .summary {
+        background: var(--card-bg); border-radius: 12px; text-align: center;
+        padding: 28px 20px; margin: 24px 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+    .summary .stars {
+        color: var(--terracotta-light); font-size: 34px; letter-spacing: 6px;
+        line-height: 1; margin-bottom: 8px;
+    }
+    .summary .score { font-size: 22px; font-weight: bold; }
+    .summary .count { color: var(--text-muted); font-size: 14px; margin-top: 4px; }
+    .summary .source { color: var(--text-muted); font-size: 12px; margin-top: 10px; }
+
+    /* CTA button */
+    .cta {
+        display: inline-block; background: var(--terracotta); color: #ffffff;
+        font-size: 17px; font-weight: bold; text-decoration: none;
+        padding: 15px 40px; border-radius: 8px; margin-top: 18px;
+        transition: background 0.2s;
+    }
+    .cta:hover { background: var(--terracotta-dark); }
+
+    /* Reviews grid */
+    .reviews {
+        display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 18px; margin-top: 32px;
+    }
+    .review {
+        background: var(--card-bg); border-radius: 12px; padding: 22px 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        display: flex; flex-direction: column; gap: 10px;
+    }
+    .review .stars { color: var(--terracotta-light); font-size: 18px; letter-spacing: 3px; line-height: 1; }
+    .review .text { font-size: 15px; color: var(--text); flex-grow: 1; }
+    .review .meta { font-size: 13px; color: var(--text-muted); border-top: 1px solid #eee; padding-top: 10px; }
+    .review .meta .name { font-weight: bold; color: var(--text); }
+
+    /* Footer */
+    footer {
+        text-align: center; margin-top: 48px; padding-top: 24px;
+        border-top: 1px solid #e5ddd5; font-size: 13px; color: var(--text-muted);
+    }
+    footer a { color: var(--terracotta); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+        h1 { font-size: 22px; }
+        .cta { padding: 14px 28px; font-size: 16px; }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/70744494/logos/email/6373008466.jpg" alt="Ania Chmura Art">
+        <h1>Opinie o kubkach Grip&Sip</h1>
+    </header>
+
+    <section class="summary">
+        <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+        <div class="score">5,0</div>
+        <div class="count">na podstawie opinii z Google</div>
+        <!-- Po dodaniu prawdziwych opinii podmień: np. "12 opinii z Google" -->
+        <a class="cta" href="https://g.page/r/CeZk5IUQ7VXnEBM/review" target="_blank" rel="noopener">
+            &#11088; Dodaj swoją opinię
+        </a>
+        <div class="source">Kliknięcie przenosi do Google Opinie</div>
+    </section>
+
+    <!-- ============================================================
+         KARTY OPINII — PRZYKŁADY DO PODMIANY NA PRAWDZIWE OPINIE
+         Każda opinia: skopiuj blok <div class="review"> ... </div>,
+         podmień gwiazdki (&#9733; = pełna, &#9734; = pusta),
+         treść, imię autora i datę. Usuń komentarze przy publikacji.
+         ============================================================ -->
+    <section class="reviews">
+
+        <div class="review">
+            <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+            <div class="text">„Kubek jest przepiękny i robi furorę w domu — dzieci same po niego sięgają. Widać, że każda sztuka jest robiona z sercem. Paczka dotarła błyskawicznie."</div>
+            <div class="meta"><span class="name">Anna K.</span> &middot; via Google &middot; październik 2026</div>
+        </div>
+
+        <div class="review">
+            <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+            <div class="text">„Prezent dla wspinającego się męża — strzał w dziesiątkę. Chwyty trzymają się mocno, kubek myję w zmywarce i nic się nie dzieje. Polecam!"</div>
+            <div class="meta"><span class="name">Marta W.</span> &middot; via Google &middot; wrzesień 2026</div>
+        </div>
+
+        <div class="review">
+            <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+            <div class="text">„Zamówiłem kubek dla córki, która wchodzi na ściance 3 razy w tygodniu. Teraz codziennie rano 'wspina się' po kawę. Świetny pomysł na połączenie pasji."</div>
+            <div class="meta"><span class="name">Piotr M.</span> &middot; via Google &middot; sierpień 2026</div>
+        </div>
+
+        <div class="review">
+            <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+            <div class="text">„Cudowne, oryginalne rękodzieło. Kontakt z Anią na najwyższym poziomie — dopytała o preferencje kolorystyczne. Kubek prezentuje się jeszcze lepiej niż na zdjęciach."</div>
+            <div class="meta"><span class="name">Kasia i Tomek</span> &middot; via Google &middot; lipiec 2026</div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Kubki wspinaczkowe z chwytami &mdash; ręcznie robione w pracowni Ani Chmury.</p>
+        <p>
+            <a href="https://aniachmura.art">aniachmura.art</a> &middot;
+            <a href="https://www.instagram.com/grip.and.sip/" target="_blank" rel="noopener">@grip.and.sip</a>
+        </p>
+        <p style="margin-top: 10px;">Opinie pochodzą z Google i są publikowane bez zmian, podpisane imieniem autora.</p>
+    </footer>
+
+</div>
+
+<!-- OPCJONALNIE (SEO): po podmiance przykladów na prawdziwe opinie odkomentuj
+     i uzupełnij liczby, aby Google pokazywał gwiazdki w wynikach wyszukiwania:
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Kubki wspinaczkowe Grip&Sip",
+  "brand": { "@type": "Brand", "name": "Ania Chmura Art" },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "12"
+  }
+}
+</script>
+-->
+</body>
+</html>
